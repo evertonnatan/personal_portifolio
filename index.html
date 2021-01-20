@@ -179,34 +179,36 @@
             <h2>Contact Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea voluptas enim aliquam rem repudiandae dolor sapiente doloribus, accusantium expedita deserunt nihil, quasi nisi vitae magnam numquam architecto, culpa cupiditate!</p>
         </div>
-        <div class="contactForm">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="contactForm">
+            <input type="hidden" name="accessKey" value="cb0fecb3-e91f-41f5-a68a-0f0534a6c1fd">
+            <input type="hidden" name="redirectTo" value="https://evertonnatan-me.vercel.app/">
             <div class="row">
                 <div class="col50">
-                    <input type="text" name="" placeholder="First Name">
+                    <input type="text" name="name" required maxlength="20" minlength="2" placeholder="Primero nome">
                 </div>
                 <div class="col50">
-                    <input type="text" name="" placeholder="Last Name">
+                    <input type="text" name="name" placeholder="Último nome">
                 </div>
             </div>
             <div class="row">
                 <div class="col50">
-                    <input type="text" name="" placeholder="E-mail">
+                    <input type="email" name="email" required maxlength="50" placeholder="Digite seu e-mail">
                 </div>
                 <div class="col50">
-                    <input type="text" name="" placeholder="Telefone">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col100">
-                    <textarea placeholder="Message"></textarea>
+                    <input type="text" name="phone" placeholder="Telefone">
                 </div>
             </div>
             <div class="row">
                 <div class="col100">
-                    <input type="submit" value="Send">
+                    <textarea name="message"  required placeholder="Messagem"></textarea>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col100">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
     </section>
 
     <div class="copyright">
