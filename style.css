@@ -343,7 +343,15 @@ p{
     opacity: 1;
 }
 
-.work .content .workBx .textBx h3{
+.work .content .workBx .textBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+
+.work .content .workBx .textBx h3 a {
+    text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
